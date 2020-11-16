@@ -1,48 +1,92 @@
 /* feuille de style pour le site
-Auteur : Mathieu Mangeot
-*/
 
+*/
 body {
-  font-family: "Lucida Grande",Tahoma,Helvetica,sans-serif;
+	font-family: "Comfortaa", sans-serif;
+	position: relative;
+}
+/*                HEADER                */
+header {
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://images.unsplash.com/photo-1456305951335-bb8134aeab8a);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header {
-  display: block;
+header h1 {
   text-align: center;
-  color: navy;
+  font-size: 4rem;
+
 }
 
 header fieldset, header fieldset legend {
-  border: 2px solid blue;
-}
+  border: none;}
 
 header nav {
   display:block;
+  max-width: 90%;
+  text-align: center;
 }
 
-#menuprincipal ul {margin: 0; padding: 0;
-	list-style-type: none; list-style-image: none; }
-#menuprincipal li {display: inline; }
-#menuprincipal ul li a {text-decoration:none;  margin: 4px;
-	padding: 5px 20px 5px 20px; color: blue;
-	background: pink;}
-#menuprincipal ul li a:hover {color: purple;
-	background: yellow; }
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,700');
+
+html {
+  font-size:100%; // normally 16px
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  line-height: 1.6;
+}
+
+#menuprincipal {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menuprincipal ul {
+	list-style-type: none; list-style-image: none;
+  border-radius: 20px;
+  border-color: black;
+  }
+#menuprincipal li {
+  display: inline;
+}
+
+#menuprincipal ul li a {
+  text-decoration:none;
+  margin: 6px;
+	padding: 5px 20px 5px 20px;
+  color: white;
+}
+#menuprincipal ul li a:hover {
+  border-radius: 10px;
+  color: white;
+	background: rgba(0, 0, 0, 0.33);
+}
 
 #legendemenuprincipal  {
   float:left;
 }
 
 fieldset {
-  margin: 10px;
+  margin: 0px;
 }
-fieldset, legend {
-    background-color: #eee;
-    border-radius: 5px;
-    }
+
+
+
 legend {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
     font-weight: normal;
     font-style: italic;
     font-size: 1em;
@@ -50,19 +94,23 @@ legend {
   }
 
 #fieldsetcontent, #fieldsetcontent fieldset, #fieldsetcontent legend, .post, .entry fieldset,  .entry legend  {
-  border: 2px solid red;
+  border: none;
 }
 
 #content > aside {
   float: right;
 }
 
+#sidebar li {
+  list-style-type: none;
+}
+
 #fieldsetsidebar, #fieldsetsidebar legend {
-  border: 2px solid green;
+  border: none;
 }
 
 footer fieldset, footer fieldset legend {
-  border: 2px solid purple;
+  border: none;
 }
 
 footer {
