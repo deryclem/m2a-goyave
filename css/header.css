@@ -1,0 +1,70 @@
+/*CSS header*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee&family=Noto+Sans&display=swap');
+
+header {
+  background-color:#2C2C2C ;
+  width:100%;
+  height: 144;
+}
+
+section {
+  display :flex;
+  flex-wrap:wrap;
+}
+
+.logo {
+  width:100%;
+  height: auto;
+}
+
+.tel img  {
+  width:2%;
+  height: auto;
+
+
+}
+
+.mail img {
+  width:2%;
+  height:auto;
+
+}
+
+.texteicone {
+  font-family: 'Noto Sans', sans-serif;
+
+
+}
+
+.rectangle {
+  width:226px;
+  height:39px;
+  background-color: #C00A23;
+  position: relative;
+
+
+}
+
+.textebouton {
+  display: block;
+  position: absolute;
+  text-align: center;
+  font-family: 'Mukta Mahee', sans-serif;
+
+}
+
+.page_item {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.current_page_item{
+  font-family: 'Noto Sans', sans-serif;
+  color: #C00A23;
+
+}
+
+.contact{
+  display:flex;
+  postion relative;
+}

@@ -6,11 +6,13 @@
 <?php get_header(); ?>
 
 <section id='content'>
-  
+
 
   <fieldset id="fieldsetcontent">
     <!--<legend>index.php: contenu avec the_loop <code>while ( have_posts() )</code></legend>-->
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
   <fieldset class="post">
     <!--<legend>Article <code>the_post()</code> :</legend>-->
 
@@ -33,7 +35,7 @@
     </fieldset>
    	</div>
 
-    
+
   </fieldset> <!-- closes the first div box -->
 
 <?php endwhile; else : ?>
