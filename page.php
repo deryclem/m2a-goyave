@@ -6,11 +6,7 @@
 <?php get_header(); ?>
 
 <section id='content'>
-  <aside>
-    <fieldset id="fieldsetsidebar">
-  <!--<legend>index.php: &lt;aside&gt; + <code>get_sidebar()</code></legend>-->
-  <?php get_sidebar(); ?>
-  </aside>
+ 
 
   <fieldset id="fieldsetcontent">
     <!--<legend>index.php: contenu avec the_loop <code>while ( have_posts() )</code></legend>-->
@@ -37,22 +33,7 @@
     </fieldset>
    	</div>
 
-    <p style="font-size:.9em;">
-      <!-- Display the number of comments. -->
-      Cet article a <a href="<?php the_permalink(); ?>#comments"><?php comments_number( 'aucun commentaire', 'un commentaire', '% commentaires' ); ?></a>.
-   	<!-- Display a comma separated list of the Post's Categories. -->
-   	<span class="postmetadata">Posté dans <?php the_category( ', ' ); ?></span>
-  </p>
-
-    <fieldset style="margin-left:10%;">
-      <!--<legend>Commentaires : <code>comments_template()</code></legend>-->
-<?php
-    if ( comments_open() || get_comments_number() ) :
-              comments_template();
-    endif;?>
-    </fieldset>
-  </fieldset> <!-- closes the first div box -->
-
+    
 <?php endwhile; else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
