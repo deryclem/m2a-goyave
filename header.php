@@ -9,7 +9,7 @@
         <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
         <?php wp_head(); ?>
     </head>
-    <body>
+    <!--<body>
       <header>
         <div class="concept concept-three">
     <div class="word">
@@ -17,11 +17,11 @@
 
   </div>
         <fieldset>
-            <h1><?php bloginfo( 'name' ); ?></h1>
+            <h1><?php //bloginfo( 'name' ); ?></h1>
 
         <nav id="menuprincipal">
           <div id="legendemenuprincipal"></div>
-          <?php wp_page_menu('show_home=1'); ?>
+          <?php //wp_page_menu('show_home=1'); ?>
         </nav>
       </fieldset>
-      </header>
+    </header>-->
