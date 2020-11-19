@@ -2,69 +2,145 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee&family=Noto+Sans&display=swap');
 
+body {
+box-sizing :content-box;
+display:block;
+float:none;
+line-height:16px;
+position:relative;
+z-index:auto;
+margin-left: auto;
+margin-right:auto;
+
+}
+div.wrap {
+  display : block;
+  margin: auto;
+  max-width: 100%;
+}
+
 header {
-  background-color:#2C2C2C ;
-  width:100%;
-  height: 144;
+  background-color: #2C2C2C;
+  padding: 16px 0;
 }
 
-section {
-  display :flex;
-  flex-wrap:wrap;
+  header div.wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  header div.logo {
+    width:100%
+    height:auto;
+    padding: 17px;
+  }
+
+  header div.navigation {
+
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    margin-left: auto;
+    width: calc(100% - 200px - 250px);
+  }
+
+    header div.navigation div.contact {
+
+      height: 70px;
+      width: 100%;
+    }
+
+    header div.navigation div.menuprincipal{
+
+      height: 70px;
+      margin-top: auto;
+      width: 100%;
+    }
+
+header div.contact {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
-.logo {
-  width:100%;
+
+header div.tel {
+
+  width: 115px;
   height: auto;
 }
 
-.tel img  {
-  width:2%;
-  height: auto;
-
-
-}
-
-.mail img {
-  width:2%;
-  height:auto;
-
-}
-
-.texteicone {
+header div.tel p {
   font-family: 'Noto Sans', sans-serif;
+}
 
+header div.tel img {
+  width:20%;
+  height:auto;
+}
+header div.mail {
+
+  width: 170px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
-.rectangle {
+header div.mail p {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header div.mail img {
+  width:15%;
+  height:auto;
+}
+
+header div.boutondevis{
+  width:226px;
+  height:39px;
+
+}
+
+header div.rectangle {
   width:226px;
   height:39px;
   background-color: #C00A23;
   position: relative;
+  margin-right: auto;
 
 
 }
 
-.textebouton {
-  display: block;
+header div.rectangle p {
   position: absolute;
   text-align: center;
   font-family: 'Mukta Mahee', sans-serif;
+}
+
+header div.menuprincipal {
+  display: flex;
+  flex-wrap: wrap;
 
 }
 
-.page_item {
+header div.menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  width :100%;
+  }
+
+header ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+header div.menu {
   font-family: 'Noto Sans', sans-serif;
+  color:#FFFFFF;
 }
 
-.current_page_item{
-  font-family: 'Noto Sans', sans-serif;
-  color: #C00A23;
-
-}
-
-.contact{
-  display:flex;
-  postion relative;
+div.current_page_item {
+  color:##C00A23;
 }
